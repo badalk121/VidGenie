@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Image to Video</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create a Video with Text and Images</h1>
+        <form id="input-form">
+            <label for="text-input">Enter Text:</label>
+            <textarea id="text-input" rows="4"></textarea>
+
+            <label for="image-upload">Upload Image:</label>
+            <input type="file" id="image-upload" accept="image/*">
+
+            <label for="position-input">Enter Image Position (x, y):</label>
+            <input type="text" id="position-input" placeholder="e.g., 1, 2">
+
+            <button type="submit">Generate Video</button>
+        </form>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
